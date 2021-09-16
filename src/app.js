@@ -8,16 +8,17 @@ const port=process.env.PORT || 3000;
 // exp.use(express.static(path1));     
 // exp.set('view engine','hbs');   
 
-const path1=path.join(__dirname,'../views/');
+const path1=path.join(__dirname,'../views');
 exp.use(express.static(path1));
 
-
+const path2=path.join(__dirname,'../views/eduford_img');
+exp.use(express.static(path2));
 // exp.set("views", path.join(__dirname, "../views")); 
      
 exp.get("/",(req,res)=>{ 
        res.sendFile(path.join(__dirname,'../views/web.html'));        
 });      
-       
+         
 exp.listen(port,()=>{
     console.log("success...");
 });

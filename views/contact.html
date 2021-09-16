@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="footer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Ubuntu:ital,wght@1,300&display=swap"
       rel="stylesheet"
@@ -32,7 +34,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    
+    <title>contact Page</title>
   </head>
   <body>
     <section class="header">
@@ -44,18 +53,19 @@
           <ul>
             <li><a href="web.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Codding Contests</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="coddingconstest.html">Codding Contests</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
       <div class="body">
         <div class="typewriter">
-          <h1>About Us</h1>
+          <h1>Contact Us</h1>
         </div>
-
-        <div class="cell"></div>
+        
+        <div class="cell">
+          Get in touch.
+        </div>
 
         <div class="content">
           <div class="text"></div>
@@ -63,7 +73,62 @@
       </div>
     </section>
     <!-- form-->
-
-  
-  </body>
+    <div class="wrapper">
+      <form class="form">
+        <div class="pageTitle title">Contact Us</div>
+        <div class="secondaryTitle title">
+          Please fill this form stay in contact &#128512.
+        </div>
+        <input type="text" class="name formEntry" placeholder="Name" />
+        <input type="text" class="email formEntry" placeholder="Email" />
+        <textarea class="message formEntry" placeholder="Message"></textarea>
+        <input type="checkbox" class="termsConditions" value="Term" />
+        <label style="color: grey" for="terms">
+          I Accept the <span style="color: #0e3721">Terms of Use</span> &
+          <span style="color: #0e3721">Privacy Policy</span>.</label
+        ><br />
+        <button class="submit formEntry" onclick="thanks()">Submit</button>
+      </form>
+    </div>
+<!-- footer -->
+<div class="footer-dark">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="https://www.webdesign-inspiration.com/">Web design</a></li>
+            <li><a href="https://www.soas.ac.uk/cedep-demos/000_P501_USD_K3736-Demo/unit1/page_12.htm">Development</a></li>
+            <li><a href="https://dashboard.heroku.com/">Hosting</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item"> 
+          <h3>About</h3>  
+          <ul>
+            <li><a href="./web.html">Website</a></li>
+            <li><a href="./about.css">About Us</a></li>
+            <li><a href="./coddingconstest.html">Contests</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Codeverse</h3>
+          <p>
+             this website about coding related information also includs contestd of codeforces and codechef.
+          </p>
+        </div>
+        <div class="col item social">
+          <a href="https://www.facebook.com/tejas.tank.94064"
+            ><i class="icon ion-social-facebook fa-faceboo"></i></a
+          ><a href="https://twitter.com/TankTejas3"
+            ><i class="icon ion-social-twitter fa-twitte"></i></a
+          ><a href="https://www.linkedin.com/in/tejas-tank-122648204/"
+            ><i class="icon ion-social-linkedin fa-linkedi"></i></a
+          ><a href="https://www.instagram.com/tejas__tank_235/"
+            ><i class="icon ion-social-instagram fa-instagra"></i
+          ></a>
+         </div>
+  </footer>
+  <script src="./web.js"></script>
+  </body> 
 </html>
